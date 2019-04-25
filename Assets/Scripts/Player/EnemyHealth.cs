@@ -47,4 +47,7 @@ public class EnemyHealth : NetworkBehaviour
         _healthSlider.value = health / (float)_maxHealth;
     }
 
+
+    
+
 }

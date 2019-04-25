@@ -10,7 +10,7 @@ public class Health : NetworkBehaviour
 
     public const int MaxHealth = 100; //血总理
 
-    [SyncVar(hook = "OnChangeHealth")] //同步变量  当血量发生变化的时候 将会调用方法
+    [SyncVar(hook = "OnChangeHealth")] //同步变量  当下方变量发生变化的时候 将会调用方法 字符串为函数名称
     int _currentHealth = MaxHealth; //当前血量
 
     Slider _bloodSlider;
@@ -31,7 +31,7 @@ public class Health : NetworkBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (!isServer)
+        if (!isServer) //该状态在服务器上处于活动状态则返回True 
         {
             return;
         }
