@@ -2,3 +2,11 @@
 *.info
 Library/
 UNet_Project.sln
+*.lock
+
+.vs/
+Temp/
+obj/
+Assembly-CSharp.csproj
+UNet_Project.csproj
+UNet_Project.userprefs
